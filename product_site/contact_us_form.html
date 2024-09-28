@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
-        <title>contact form submission</title>
+        <meta charset="UTF-8">
+        <title>Contact Form Submission</title>
     </head>
     <body>
         <h1>Contact Form Submission</h1>
-        <form action = "index.html">
-            
-            <label for = "Email"> Email</label>
-            <input type = "text" id = "Email" name = "Email" required>
+        <form action="index.html">
+            <label for="Email"> Email</label>
+            <input type="text" id="Email" name="Email" required>
             <br><br>
 
-            <label for = "Subject">Subject</label>
+            <label for="Subject">Subject</label>
             <br>
-            <textarea id = "Message" name = "Message" rows = "5" cols="33" required></textarea>
+            <textarea id="Subject" name="Subject" rows="5" cols="33" required></textarea>
             <br><br>
-            <label for = "Message"> Message: </label>
+
+            <label for="Message"> Message: </label>
             <br>
-            <textarea id = "Message" name = "Message" rows = "5" cols="33" required></textarea>
+            <textarea id="Message" name="Message" rows="5" cols="33" required></textarea>
             <br><br>
 
             <label>Product: </label>
             <br>
-            <input type = "radio" id = "TCG" name = "Product" value ="TCG"></input>
-            <label for = "TCG">TCG</label>
+            <input type="radio" id="TCG" name="Product" value="TCG">
+            <label for="TCG">TCG</label>
             <br>
-            <input type = "radio" id = "Computer Component" name = "Product" value = "Computer Component" ></input>
-            <label for = "Computer Component"> Computer Component</label>
+            <input type="radio" id="ComputerComponent" name="Product" value="Computer Component">
+            <label for="ComputerComponent"> Computer Component</label>
             <br><br>
-            <button type = "Submit">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </body>
 </html>
