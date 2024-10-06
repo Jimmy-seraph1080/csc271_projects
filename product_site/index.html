@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>CardTech - Your one stop for TCG cards and Computer Components! </title>
+        <link rel = "stylesheet" href = "css/style.css">
     </head>
     <body>
         <img src ="images/logoweb1.png" alt = "a picture of CardTech Logo" width = "200" height = "200"/>
@@ -15,17 +16,16 @@
             <strong>Why us?</strong> <br>We offer the best deals, vast product selections, and an easy-to-use interface that will help you 
             find what you're looking for in no time!</p>
         <br>
-
-        <a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/index.html">Home</a> 
-        <a href="#">Login</a>
-        <a href="#">Cart</a>
-        <a href="#">Checkout</a>
+        <table border="1">
+            <tr>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="#">Login</a></td>
+                <td><a href="#">Cart</a></td>
+                <td><a href="#">Checkout</a></td>
+                <td><a href="deals_page.html">Deals</a></td>
+            </tr>
+        </table>
         <br>
-
-        <h2><Strong>Deal</Strong></h2>
-        <p>If you're looking for amazing deals, <a href="#">click here</a> to explore our latest offers on computer components and trading cards!</p>
-        <br>
-
 
         <h2><strong>TCG CARDS</strong></h2>
         <table>
@@ -36,9 +36,9 @@
             </tr>
             <tr>
                 <!-- Error: The frameborder attribute on the iframe element is obsolete. Use CSS instead. -->
-                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/ttIlVC9tKOs?si=OQ1pEZoXnodNoTkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
-                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/LSs4mBRy7nk?si=Qb8hzz_O38SgOlNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
-                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/EPGyMsjsg8k?si=GFlJvhmDetsLlhME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td><iframe width="400" height="315" src="https://www.youtube.com/embed/ttIlVC9tKOs?si=OQ1pEZoXnodNoTkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td><iframe width="400" height="315" src="https://www.youtube.com/embed/LSs4mBRy7nk?si=Qb8hzz_O38SgOlNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td><iframe width="400" height="315" src="https://www.youtube.com/embed/EPGyMsjsg8k?si=GFlJvhmDetsLlhME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
             </tr>
         </table>
         <ul>
@@ -57,7 +57,7 @@
                 <th>Motherboard</th>
             </tr>
             <tr>
-                <td><img src="images/geforce.jfif" alt="a picture of a text Geforce" width = "460" height="180" /></td>
+                <td><img src="images/geforce.jfif" alt="a picture of a text Geforce" width = "400" height="180" /></td>
                 <td><img src="images/intel.jpg" alt="a picture of intels logo" width="400" height="180" /></td>
                 <td><img src="images/asus.jfif" alt="a picture of asus logo" width="400" height="180" /></td>
             </tr>
@@ -71,13 +71,15 @@
             <li><a href ="https://www.newegg.com/"><em>More...</em></a></li>
         </ul>
         <br>
-        <h2><strong>Contact Us</strong></h2>
-        <p>Author: Jimmy Zhang</p>
-        <p>If you have any questions, feel free to <a href ="contact_us_form.html">email us</a> at <strong>jimmy_zhang@uri.edu</strong>.</p>
-        <a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/index.html">Home</a> 
-        <a href="#">Login</a><br>
-        <a href="#">Cart</a><br>
-        <a href="#">Checkout</a><br>
+        <table border="1">
+            <tr>
+                <td><a href="contact_us_form.html" id="contact-home">Email Us</a></td>
+                <td><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/index.html" id="contact-home">Home</a></td>
+                <td><a href="#" id="contact-login">Login</a></td>
+                <td><a href="#" id="contact-cart">Cart</a></td>
+                <td><a href="#" id="contact-checkout">Checkout</a></td>
+            </tr>
+        </table>
 
     </body>
 </html>

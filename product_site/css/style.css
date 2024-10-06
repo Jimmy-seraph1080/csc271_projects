@@ -1,0 +1,117 @@
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #011d79, #ffffff);
+}
+
+h1{
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #ffffff;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+p{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, sans-serif, arial; 
+}
+
+
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited{
+    color: #ff002b;
+}
+
+a:hover{
+    color: #08ffc9;
+}
+
+a:active{
+    color: #0004d3;
+}
+
+
+table{
+    margin: 20px auto;          
+    border-collapse: collapse;   
+    width: 90%;                  
+    table-layout: fixed;         
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);  
+    border-radius: 10px; 
+    overflow: hidden;                
+}
+
+table tr{
+    background-color: #78afdd;      
+}
+
+table td {
+    text-align: center;          
+    padding: 15px 30px;                     
+}
+
+table td:hover {
+    background-color: #3462fc;  
+    color: white;                
+}
+
+
+table td a {
+    display: block;        
+    color: white;     
+}
+
+
+table td:hover a{
+    color: white;                
+}
+
+
+table td.active{
+    background-color: #ffffff;   
+}
+
+.contact-home,
+.contact-login,
+.contact-cart,
+.contact-checkout{   
+    padding: auto;
+    margin: auto; 
+    color: #ffffff;           
+    font-size: 18px;          
+    font-weight: bold;
+    border-radius: 10px;         
+    overflow: hidden;            
+}
+
+.contact-home:visited,
+.contact-login:visited,
+.contact-cart:visited,
+.contact-checkout:visited{
+    color: #ff002b;
+}
+
+.contact-home:active,
+.contact-login:active,
+.contact-cart:active,
+.contact-checkout:active{
+    background-color: #0004d3;
+    color: #ffffff;
+}
