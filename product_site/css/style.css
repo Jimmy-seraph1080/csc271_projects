@@ -88,10 +88,10 @@ table td.active{
     background-color: #ffffff;   
 }
 
-.contact-home,
-.contact-login,
-.contact-cart,
-.contact-checkout{   
+.home,
+.login,
+.cart,
+.checkout{   
     padding: auto;
     margin: auto; 
     color: #ffffff;           
@@ -101,24 +101,22 @@ table td.active{
     overflow: hidden;            
 }
 
-.contact-home:visited,
-.contact-login:visited,
-.contact-cart:visited,
-.contact-checkout:visited{
+.home:visited,
+.login:visited,
+.cart:visited,
+.checkout:visited{
     color: #ff002b;
 }
 
-.contact-home:active,
-.contact-login:active,
-.contact-cart:active,
-.contact-checkout:active{
+.home:active,
+.login:active,
+.cart:active,
+.checkout:active{
     background-color: #0004d3;
     color: #ffffff;
 }
 
-.news {
-    color: black;
-}
+.news, 
 .home_paragraph{
-    color: black;  
+    color: black;
 }
