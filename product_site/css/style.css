@@ -49,6 +49,7 @@ a:active{
 
 
 table{
+    border: 1px solid #cccbcb;
     margin: 20px auto;          
     border-collapse: collapse;   
     width: 90%;                  
