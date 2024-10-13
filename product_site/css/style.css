@@ -45,7 +45,13 @@ body {
     border-radius: 8px;
     text-align: center;
 }
-
+.news{
+    margin: 30px 100px;
+    padding: 10px 20px 20px 20px;
+    width: 80%;
+    text-align: center;
+    background-color: solid white;
+}
 .foot{
     float: left;
     width: 80%;
