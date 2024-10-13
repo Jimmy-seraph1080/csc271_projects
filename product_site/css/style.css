@@ -1,107 +1,157 @@
-body{
-    background-color: #f4f4f4;
+body {
+    background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background: lightblue;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    color: #ffffff;
+.header {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.header a {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.header a:hover {
+    background-color: #575757;
+}
+
+.header a:active{
+    background-color: #0004d3;
+    color: rgb(255, 255, 255);
+}
+.header .active {
+    background-color: #1abc9c;
+    color: black;
+}
+
+.content{
+    float: left;
+    width: 80%;
+    margin: 30px 100px;
+    padding: 10px 20px 20px 20px;
+    background-color: solid white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+img.center {
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    width: 100%; 
+    height: auto;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-h2{
-    color: #ffffff;
+h2 {
+    color: rgb(255, 255, 255);
     font-size: 28px;
+    margin-bottom: 15px;
 }
 
 p{
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     font-size: 16px;
-    font-family: Verdana, Geneva, sans-serif, arial; 
+    margin-bottom: 20px;
 }
 
-
-
 a{
-    color: #ffffff;
-    text-decoration: none;
+    color: white;
     font-weight: bold;
+}
+
+a:hover {
+    color: #08ffc9;
 }
 
 a:visited{
     color: #ff002b;
 }
 
-a:hover{
-    color: #08ffc9;
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
 }
 
-a:active{
-    color: #0004d3;
-}
-
-
-table tr{
-  
-    background-color: #78afdd;      
-}
-
-table td {
-    text-align: center;          
+table tr td{
+    background-color: #78afdd;
+    padding: 10px;
+    text-align: center;
 }
 
 table td:hover {
-    background-color: #3462fc;  
-    color: white;                
+    background-color: #575757;
+    color: white;
 }
-
 
 table td a {
-      
-    color: white;     
+    color: white;
 }
 
-
-table td:hover a{
-    color: white;                
-}
-
-
-table td.active{
-    background-color: #ffffff;   
-}
-
-.home,
-.login,
-.cart,
-.checkout{
+.home, .login, .cart, .checkout {
     text-align: center;
-    color: #ffffff;           
-    font-size: 18px;          
+    color: white;
+    font-size: 18px;
     font-weight: bold;
-            
 }
 
-.home:visited,
-.login:visited,
-.cart:visited,
-.checkout:visited{
-    text-align: center;
+.home:visited, .login:visited, .cart:visited, .checkout:visited {
     color: #ff002b;
 }
 
-.home:active,
-.login:active,
-.cart:active,
-.checkout:active{
+.home:active, .login:active, .cart:active, .checkout:active {
     background-color: #0004d3;
-    color: #ffffff;
+    color: white;
 }
 
-.news, 
-.home_paragraph{
+.news, .home_paragraph {
     color: black;
+}
+
+@media (max-width: 600px){
+    .header {
+        display: block;
+        text-align: left;
+    }
+
+    .header a {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 12px;
+    }
+
+    .content {
+        width: 100%;
+        font-size: 18px; 
+    }
+
+    img {
+        margin: 15px auto;
+        max-width: 100%;
+    }
+
+    table img {
+        width: 100%;
+        max-width: 100px;
+    }
 }
