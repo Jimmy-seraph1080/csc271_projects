@@ -141,46 +141,42 @@ table td a {
 .home_paragraph {
     color: black;
 }
-
-.video-iframe{
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-}
-
-.responsive-image{
+.video-iframe {
+    text-align: center;
+    border: none;
     width: 100%;
     max-width: 400px;
     height: auto;
 }
 
 @media (max-width: 600px){
-    .header {
+    .header{
         display: block;
         text-align: left;
     }
 
-    .header a {
+    .header a{
         display: block;
         width: 100%;
         text-align: left;
         padding: 12px;
     }
 
-    .content {
+    .content{
         width: 100%;
         font-size: 18px; 
     }
 
-    img {
+    img{
         margin: 15px auto;
         max-width: 100%;
     }
 
-    table img {
+    table img{
         width: 100%;
         max-width: 100px;
     }
+
     .video-iframe, .responsive-image{
         max-width: 100%;
     }
