@@ -181,7 +181,7 @@ table td a {
         width: 100%;
         max-width: 100px;
     }
-    .video-iframe, .responsive-image {
+    .video-iframe, .responsive-image{
         max-width: 100%;
     }
 }
