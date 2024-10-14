@@ -138,8 +138,16 @@ table td a {
     color: white;
 }
 
-.news, .home_paragraph {
+.home_paragraph {
     color: black;
+}
+
+.video-iframe {
+    text-align: center;
+    border: none;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 @media (max-width: 600px){
@@ -168,5 +176,10 @@ table td a {
     table img {
         width: 100%;
         max-width: 100px;
+    }
+
+    .video-iframe {
+        max-width: 100%;
+        height: auto;
     }
 }
