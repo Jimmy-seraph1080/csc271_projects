@@ -4,6 +4,7 @@ body{
     text-align: center;
     margin: 0;
     padding: 0;
+
 }
 
 .header{
@@ -15,7 +16,7 @@ body{
 }
 
 .header a{
-    float: right;
+    float: left;
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     color: white;
@@ -45,13 +46,17 @@ body{
     border-radius: 8px;
     text-align: center;
 }
+
 .news{
-    margin: 30px 100px;
-    padding: 10px 20px 20px 20px;
-    width: 80%;
-    text-align: center;
     background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
 }
+
 .foot{
     float: left;
     width: 80%;
@@ -68,6 +73,8 @@ img.center{
     width: 100%; 
     height: auto;
 }
+
+
 
 h1{
     color: rgb(255, 255, 255);
@@ -137,6 +144,7 @@ table td a{
     background-color: #0004d3;
     color: white;
 }
+
 
 .home_paragraph{
     color: black;
