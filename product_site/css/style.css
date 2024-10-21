@@ -38,9 +38,12 @@ h1, h2, p {
     border: none;
     color: white;
     cursor: pointer;
-    display: none; /* Hidden by default, will display on mobile */
+    /* Hidden by default
+     will display on mobile */
+    display: none;
 }
 
+/* Content style */
 .content{
     float: left;
     width: 100%;
@@ -103,11 +106,11 @@ a:hover {
 
 a:active {
     background-color: #333;
-    color: #ffcc00; /* Color when the link is clicked (active state) */
+    color: #ffcc00;
 }
 
 a:visited {
-    color: #ff0000; /* Color for visited links */
+    color: #ff0000;
 }
 
 
@@ -133,30 +136,29 @@ table th, table td {
 }
 
 table img {
-    /*float: left; */
-    max-width: 100%; /* Make images responsive */
+    max-width: 100%;
     height: auto;
 }
 
 /* For responsive images */
 img {
     float: left;
-    max-width: 100%; /* Ensures the image doesn't exceed the container width */
-    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%; 
+    height: auto;
 }
 
 /* For responsive video iframes */
 iframe {
-    width: 100%; /* Full width */
-    max-width: 100%; /* Ensures the video scales with the container */
-    height: auto; /* Automatically adjusts height */
+    width: 100%; 
+    max-width: 100%;
+    height: auto;
 }
 
-/* Media Query for Mobile Devices */
+/* Media Query */
 @media screen and (max-width: 600px) {
     .logo-container {
         width: 100%;
-        justify-content: space-between; /* Ensures logo and hamburger are spaced apart */
+        justify-content: space-between;
     }
     .header {
         display: block;
@@ -169,7 +171,7 @@ iframe {
     }
 
     .nav-toggle {
-        display: block; /* Show hamburger icon on mobile */
+        display: block;
     }
 
     nav ul {
@@ -180,7 +182,7 @@ iframe {
     }
 
     .nav-open ul {
-        display: flex; /* Show dropdown on mobile */
+        display: flex;
     }
 
     nav ul li {
@@ -193,40 +195,39 @@ iframe {
         text-decoration: none;
         font-size: 18px;
         padding: 10px 20px;
-        /*padding: 15px;*/
     }
 
-        /* Hover state */
     nav ul li a:hover {
         background-color: #444;
         border-radius: 5px;
-        color: #08ffc9; /* Change text color when hovering */
+        color: #08ffc9;
     }
 
-    /* Visited state */
     nav ul li a:visited {
-        color: #ff002b; /* Change text color for visited links */
+        color: #ff002b;
     }
 
     /* Active state */
     nav ul li a:active {
-        background-color: #0004d3; /* Background color when the link is active */
-        color: white; /* Text color when the link is active */
+        background-color: #0004d3;
+        color: white;
     }
 
     .nav-toggle {
-        display: block; /* Show hamburger icon on mobile */
+        display: block;
     }
 
     .navbar ul {
-        display: none; /* Hide the menu initially */
+         /* Hide the menu*/
+        display: none;
         flex-direction: column;
         padding: 0;
         background-color: #333;
     }
 
     .nav-open ul {
-        display: flex; /* Show dropdown on mobile when toggled */
+         /* Show dropdown on mobile when toggled */
+        display: flex;
     }
 
     
