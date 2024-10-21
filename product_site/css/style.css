@@ -94,7 +94,7 @@ nav ul li a:hover {
 }
 
 a {
-    color: white;
+    color: rgb(0, 8, 255);
     text-decoration: none;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
