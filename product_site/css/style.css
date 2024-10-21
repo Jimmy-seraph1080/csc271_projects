@@ -86,6 +86,16 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+nav ul li a:visited {
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+nav ul li a:active {
+    background-color: #333;
+    border-radius: 5px;
+}
+
 /* Footer styles */
 .foot {
     background-color: #222;
