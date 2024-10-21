@@ -22,7 +22,7 @@ h1, h2, p {
     overflow: hidden;
 }
 
-.logo-container {
+.logo_container {
     display: flex;
     align-items: center;
 }
@@ -32,7 +32,7 @@ h1, h2, p {
     height: auto;
 }
 
-.nav-toggle {
+.nav_toggle {
     font-size: 30px;
     background: none;
     border: none;
@@ -127,7 +127,7 @@ a:visited {
 
 
 
-.nav-toggle {
+.nav_toggle {
     display: none;
 }
 
@@ -168,7 +168,7 @@ iframe {
 
 /* Media Query */
 @media screen and (max-width: 600px) {
-    .logo-container {
+    .logo_container {
         width: 100%;
         justify-content: space-between;
     }
@@ -182,7 +182,7 @@ iframe {
         font-size: 18px;
     }
 
-    .nav-toggle {
+    .nav_toggle {
         display: block;
     }
 
@@ -193,7 +193,7 @@ iframe {
         background-color: #333;
     }
 
-    .nav-open ul {
+    .nav_open ul {
         display: flex;
     }
 
@@ -225,11 +225,11 @@ iframe {
         color: white;
     }
 
-    .nav-toggle {
+    .nav_toggle {
         display: block;
     }
 
-    .navbar ul {
+    .nav_bar ul {
          /* Hide the menu*/
         display: none;
         flex-direction: column;
@@ -237,14 +237,10 @@ iframe {
         background-color: #333;
     }
 
-    .nav-open ul {
+    .nav_open ul {
          /* Show dropdown on mobile when toggled */
         display: flex;
     }
-
-    
-
-
 
     img {
         margin: 15px auto;
@@ -253,12 +249,14 @@ iframe {
     }
     
     table {
-        width: 100%; /* Make the table full width on smaller screens */
+        /* Make the table full width on smaller screens */
+        width: 100%;
     }
 
     table img {
         width: 100%;
-        max-width: 100px; /* Ensure table images are scaled */
+         /* Ensure table images are scaled */
+        max-width: 100px;
     }
 
     iframe {

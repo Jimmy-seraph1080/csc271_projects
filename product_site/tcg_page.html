@@ -11,12 +11,12 @@
 
 <body>
     <div class="header">
-        <div class="logo-container">
+        <div class="logo_container">
             <img src="images/logoweb1.png" alt="CardTech Logo" class="logo">
-            <button class="nav-toggle" id="navToggle">&#9776;</button> 
+            <button class="nav_toggle" id="nav_Toggle">&#9776;</button> 
         </div>
 
-        <nav id="navbar">
+        <nav id="nav_bar">
             <ul>
                 <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/index.html">Home</a></li>
                 <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/tcg_page.html">Cards</a></li>
@@ -105,11 +105,12 @@
     </div>
 
     <script>
-        const navToggle = document.getElementById('navToggle');
-        const navbar = document.getElementById('navbar');
+        //source : https://rails.devcamp.com/trails/javascript-in-the-browser/campsites/javascript-dom/guides/how-to-use-javascript-s-toggle-function
+        const nav_Toggle = document.getElementById('nav_Toggle');
+        const nav_bar = document.getElementById('nav_bar');
 
-        navToggle.addEventListener('click', () => {
-            navbar.classList.toggle('nav-open');
+        nav_Toggle.addEventListener('click', () => {
+            nav_bar.classList.toggle('nav__open');
         });
     </script>
     
