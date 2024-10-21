@@ -4,34 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CardTech - Deals and Offers</title>
+    <meta name="keywords" content="PC parts deals, GPU discounts, TCG card sales, Pokemon, Yu-Gi-Oh!">
+    <meta name="description" content="Find exclusive discounts on PC parts, GPUs, and TCG cards at CardTech. Check out our best offers on Pokemon and Yu-Gi-Oh! cards.">
+    <title>Your one-stop for TCG cards and PC parts!</title>
     <link rel = "stylesheet" href = "css/style.css">
 </head>
 
 <body>
     <div class="header">
-        <img src="images/logoweb1.png" alt="CardTech Logo">
-        
-        <table>
-            <tr>
-                <td><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/index.html">Home</a></td>
-                <td><a href="#">Login</a></td>
-                <td><a href="#">Cart</a></td>
-                <td><a href="#">Checkout</a></td>
-                <td><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/news_page.html">News</a></td>
-                <td><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/deals_page.html">Deals</a></td>
-                <td><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/card_page.html">Cards</a></td>
-            </tr>
-        </table>
-    </div>
+        <div class="logo-container">
+            <img src="images/logoweb1.png" alt="CardTech Logo" class="logo">
+            <button class="nav-toggle" id="navToggle">&#9776;</button> <!-- Hamburger Icon -->
+        </div>
 
+        <nav id="navbar">
+            <ul>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/index.html">Home</a></li>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/tcg_page.html">Cards</a></li>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/deals_page.html">Deals</a></li>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/news_page.html">News</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </div>
     <h1>Welcome to CardTech's Deals Page!</h1>
 
-    <p>Check out our amazing deals on TCG cards and computer components!</p>
+    <p>Check out our amazing deals on TCG cards and some pc parts!</p>
     <p>Explore our latest offers on computer components and trading cards!</p>
     <br>
 
-    <h2>Featured Deals</h2>
+    <h2><h2>Exclusive Deals on PC Parts, GPUs, and TCG Cards</h2></h2>
 
     <div class = "content">
         <table>
@@ -56,7 +60,7 @@
                     Attribute Monster Type/Card Type:LIGHT Fiend/Monster,
                     Level:6,
                     A / D:1800 / 2400
-                    Click the image to view it on eBay.
+                    Click the image to view it on tcgplayer.com.
                  </td>
                 <td>$107.83</td>
                 <td>$83.04</td>
@@ -75,25 +79,25 @@
             </tr>
     
             <tr>
-                <td>GeForce RTX 3080 (Graphics Card)</td>
+                <td>GeForce RTX 3080 (GPU)</td>
                 <td>
                     <a href="https://www.ebay.com/itm/256657588983?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=YSdPefteT-m&sssrc=2047675&ssuid=&widget_ver=artemis&media=COPY">
                         <img src="images/rtx3080.png" alt="GeForce RTX 3080" >
                     </a>
                 </td>
-                <td>The GeForce RTX 3080 is a powerful graphics card ideal for gaming and content creation. Click the image to view it on eBay.</td>
+                <td>The GeForce RTX 3080 GPU is a powerful graphics card ideal for gaming and content creation. Click the image to view it on eBay.</td>
                 <td>$1,200</td>
                 <td>$360</td>
             </tr>
     
             <tr>
-                <td>Intel Core i9-12900K Processor</td>
+                <td>Intel Core i9-12900K Processor(CPU)</td>
                 <td>
                     <a href="https://www.ebay.com/itm/384482651295?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=Ok6NaWEKSPa&sssrc=2047675&ssuid=&widget_ver=artemis&media=COPY">
                         <img src="images/i9.png" alt="Intel Core i9 Processor 12 Gen" >
                     </a>
                 </td>
-                <td>The Intel Core i9-12900K is one of the fastest processors available, great for high-performance tasks and gaming. Click the image to view it on eBay.</td>
+                <td>The Intel Core i9-12900K CPU is one of the fastest processors available, great for high-performance tasks and gaming. Click the image to view it on eBay.</td>
                 <td>$657.49</td>
                 <td>$367.49</td>
             </tr>
@@ -102,19 +106,28 @@
     <br><br>
 
     <br>
-    <div class = "foot">
-        <table>
-            <tr>
-                <td><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/contact_us_form.html" id ="form">Email Us</a></td>
-                <td><a href="#" class ="login">Login</a></td>
-                <td><a href="#" class ="cart">Cart</a></td>
-                <td><a href="#" class ="checkout">Checkout</a></td>
-                <td><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/news_page.html" class ="new">News</a></td>
-                <td><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/deals_page.html" class ="deal">Deals</a></td>
-                <td><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/card_page.html" class ="card">Cards</a></td>
-            </tr>
-        </table>
+    <div class="foot">
+        <nav>
+            <ul>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/contact_us_form.html" id="form">Email Us</a></li>
+                <li><a href="#" class="login">Login</a></li>
+                <li><a href="#" class="cart">Cart</a></li>
+                <li><a href="#" class="checkout">Checkout</a></li>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/news_page.html" class="new">News</a></li>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/deals_page.html" class="deal">Deals</a></li>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/tcg_page.html" class="card">Cards</a></li>
+            </ul>
+        </nav>
     </div>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navbar = document.getElementById('navbar');
+
+        navToggle.addEventListener('click', () => {
+            navbar.classList.toggle('nav-open');
+        });
+    </script>
 </body>
 
 </html>

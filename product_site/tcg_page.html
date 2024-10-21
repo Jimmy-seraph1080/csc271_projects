@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="TCG cards, Pokemon, YuGiOh, trading cards">
+    <meta name="description" content="Shop for Pokemon and Yu-Gi-Oh! TCG cards at CardTech. Find rare and popular trading cards.">
+    <title>Your one-stop for TCG cards and PC parts!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="images/logoweb1.png" alt="CardTech Logo" class="logo">
+            <button class="nav-toggle" id="navToggle">&#9776;</button> <!-- Hamburger Icon -->
+        </div>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/index.html">Home</a></li>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/card_page.html">Cards</a></li>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/deals_page.html">Deals</a></li>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/news_page.html">News</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Trading card game (TCG) - Explore and Collect!</h1>
+    <p>Welcome to our trading card page where you can find your rare and most desirable trading cards are located. Whether you are a collector or a gaming enthusiast, explore our handpicked display!</p>
+
+    <h2><h2>Explore TCG Cards - Pokemon, Yu-Gi-Oh!, and More</h2></h2>
+
+    <div class="content">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Image</th>
+                <th>Description</th>
+                <th>Original Price</th>
+                <th>Discounted Price</th>
+            </tr>
+
+            <tr>
+                <td>Fiendsmith Engraver (Yu-Gi-Oh!)</td>
+                <td>
+                    <a href="https://www.tcgplayer.com/product/558188">
+                        <img src="images/fiendsmith.png" alt="TCG card called Fiendsmith Engraver">
+                    </a>
+                </td>
+                <td>
+                    Secret Rare Yu-Gi-Oh! Card. <br>
+                    Level: 6 | ATK/DEF: 1800 / 2400
+                </td>
+                <td>$107.83</td>
+                <td>$83.04</td>
+            </tr>
+
+            <tr>
+                <td>The One Ring - Prerelease Cards (PRE)</td>
+                <td>
+                    <a href="https://www.tcgplayer.com/product/501274/magic-prerelease-cards-the-one-ring?page=1&Language=English">
+                        <img src="images/one_ring.png" alt="TCG card called The One Ring - Prerelease Cards (PRE)">
+                    </a>
+                </td>
+                <td>
+                    The One Ring is a limited-edition Magic: The Gathering card with immense rarity. 
+                    As part of the Universes Beyond collaboration, this card is a tribute to the Lord of the Rings universe, 
+                    offering both power and prestige to its bearer.<br>
+                    Rarity:M |<br>
+                    Card Type:Legendary Artifact|<br>
+                    Casting Cost: 4|
+                    Artist:Veli Nyström
+                </td>
+                <td>$190.00</td>
+                <td>Na</td>
+            </tr>
+
+            <tr>
+                <td>Charizard PSA 10 (Pokemon)</td>
+                <td>
+                    <a href="https://www.ebay.com/itm/356116920799">
+                        <img src="images/charizard.webp" alt="TCG card called Charizard PSA 10">
+                    </a>
+                </td>
+                <td>
+                    Iconic Charizard PSA 10 card from 2017. <br>
+                    Highly sought-after collector's item.
+                </td>
+                <td>$7,000.00</td>
+                <td>$5,950.00</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    
+    <div class="foot">
+        <nav>
+            <ul>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/contact_us_form.html" id="form">Email Us</a></li>
+                <li><a href="#" class="login">Login</a></li>
+                <li><a href="#" class="cart">Cart</a></li>
+                <li><a href="#" class="checkout">Checkout</a></li>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/news_page.html" class="new">News</a></li>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/deals_page.html" class="deal">Deals</a></li>
+                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/card_page.html" class="card">Cards</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navbar = document.getElementById('navbar');
+
+        navToggle.addEventListener('click', () => {
+            navbar.classList.toggle('nav-open');
+        });
+    </script>
+    
+</body>
+
+</html>
