@@ -47,7 +47,7 @@ h1, h2, p {
 .content{
     float: left;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0px auto;
     padding: 10px 20px 20px 20px;
     background-color: white;
@@ -78,6 +78,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     padding: 10px 20px;
+    bottom: 0;
 }
 
 nav ul li a:hover {
@@ -125,6 +126,7 @@ a:visited {
 /* Table styling */
 table {
     width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
@@ -254,204 +256,4 @@ iframe {
         max-width: 100%;
         height: auto;
     }
-
-
 }
-
-
-
-/*
-body{
-    background-color: lightblue;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-
-}
-
-.header{
-    text-align: center;
-    background-color: #333;
-    padding: 20px;
-    margin: 0;
-    overflow: hidden;
-}
-
-.header a{
-    float: left;
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline-block;
-    color: white;
-    padding: 15px;
-    font-size: 18px;
-}
-
-.header a:hover{
-    background-color: #575757;
-}
-
-.header a:active{
-    background-color: #0004d3;
-    color: rgb(255, 255, 255);
-}
-.header .active{
-    background-color: #1abc9c;
-    color: black;
-}
-
-.content{
-    float: left;
-    width: 80%;
-    margin: 30px 100px;
-    padding: 10px 20px 20px 20px;
-    background-color: white;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.news{
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    text-align: left;
-}
-
-.foot{
-    float: left;
-    width: 80%;
-    margin: 30px 100px;
-    padding: 10px 20px 20px 20px;;
-    border-radius: 8px;
-    text-align: center;
-}
-
-img.center{
-    display: block;
-    margin: 15px auto;
-    text-align: center;
-    width: 100%; 
-    height: auto;
-}
-
-
-
-h1{
-    color: rgb(255, 255, 255);
-    font-size: 36px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-h2{
-    color: rgb(255, 255, 255);
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-p{
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-a{
-    color: white;
-    font-weight: bold;
-}
-
-a:hover{
-    color: #08ffc9;
-}
-
-a:visited{
-    color: #ff002b;
-}
-
-table{
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-table tr td{
-    background-color: #78afdd;
-    padding: 10px;
-    text-align: center;
-}
-
-table td:hover{
-    background-color: #575757;
-    color: white;
-}
-
-table td a{
-    color: white;
-}
-
-.home, .login, .cart, .checkout{
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.home:visited, .login:visited, .cart:visited, .checkout:visited{
-    color: #ff002b;
-}
-
-.home:active, .login:active, .cart:active, .checkout:active{
-    background-color: #0004d3;
-    color: white;
-}
-
-
-.home_paragraph{
-    color: black;
-}
-
-.video-iframe, .img-scale{
-    width: 100%; 
-    max-width: 400px;
-    height: auto;
-}
-
-@media (max-width: 600px){
-    .header{
-        display: block;
-        text-align: left;
-    }
-
-    .header a{
-        display: block;
-        width: 100%;
-        text-align: left;
-        padding: 12px;
-    }
-
-    .content{
-        width: 100%;
-        font-size: 18px; 
-    }
-
-    img{
-        margin: 15px auto;
-        max-width: 100%;
-    }
-
-    table img{
-        width: 100%;
-        max-width: 100px;
-    }
-
-    .video-iframe, .img-scale {
-        width: 100%; 
-        max-width: 400px;
-        height: auto;
-    }
-}
-
-*/
