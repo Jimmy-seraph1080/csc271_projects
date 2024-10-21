@@ -1,4 +1,4 @@
-/* General styles */
+/* css styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -32,16 +32,6 @@ h1, h2, p {
     height: auto;
 }
 
-.nav_toggle {
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    /* Hidden by default
-     will display on mobile */
-    display: none;
-}
 
 /* Content style */
 .content{
@@ -107,7 +97,8 @@ nav ul li a:active {
 a {
     color: rgb(0, 8, 255);
     text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.3s ease, 
+    background-color 0.3s ease;
 }
 
 a:hover {
@@ -123,15 +114,6 @@ a:active {
 a:visited {
     color: #ff0000;
 }
-
-
-
-
-.nav_toggle {
-    display: none;
-}
-
-
 
 /* Table styling */
 table {
@@ -171,6 +153,7 @@ iframe {
     .logo_container {
         width: 100%;
         justify-content: space-between;
+        align-items: center;
     }
     .header {
         display: block;
@@ -182,24 +165,23 @@ iframe {
         font-size: 18px;
     }
 
-    .nav_toggle {
-        display: block;
+    nav {
+        width: 100%;
+        margin-top: 10px;
     }
 
     nav ul {
-        display: none;
+        display: flex;
         flex-direction: column;
         padding: 0;
         background-color: #333;
-    }
-
-    .nav_open ul {
-        display: flex;
+        width: 100%;
     }
 
     nav ul li {
         text-align: center;
         border-bottom: 1px solid #555;
+        width: 100%;
     }
 
     nav ul li a {
@@ -223,10 +205,6 @@ iframe {
     nav ul li a:active {
         background-color: #0004d3;
         color: white;
-    }
-
-    .nav_toggle {
-        display: block;
     }
 
     .nav_bar ul {
@@ -265,3 +243,7 @@ iframe {
         height: auto;
     }
 }
+
+
+
+
