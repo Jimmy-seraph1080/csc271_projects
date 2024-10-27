@@ -54,6 +54,17 @@ h1, h2, p {
     border-radius: 8px;
     text-align: center;
 }
+
+.w_content{
+    float: left;
+    width: 100%;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+}
 /* Cart display section takes 20% */
 .cart_display {
     width: 20%;
