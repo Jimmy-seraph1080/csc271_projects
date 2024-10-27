@@ -1,109 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="TCG cards, Pokemon, YuGiOh, trading cards">
-    <meta name="description" content="Shop for Pokemon and Yu-Gi-Oh! TCG cards at CardTech. Find rare and popular trading cards.">
-    <title>Your one-stop for TCG cards and PC parts!</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="TCG cards, Pokemon, YuGiOh, trading cards">
+        <meta name="description" content="Shop for Pokemon and Yu-Gi-Oh! TCG cards at CardTech. Find rare and popular trading cards.">
+        <title>Your one-stop for TCG cards and PC parts!</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-<body>
-    <div class="header">
-        <div class="logo_container">
-            <img src="images/logoweb1.png" alt="CardTech Logo" class="logo">
+    <body>
+        <div class="header">
+            <div class="logo_container">
+                <img src="images/logoweb1.png" alt="CardTech Logo" class="logo">
+            </div>
+            <div id="hamburger_icon" class="hamburger">&#9776;</div>
+            <nav id="nav_bar" class="nav_menu">
+                <ul class="menu">
+                    <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/index.html">Home</a></li>
+                    <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/tcg_page.html">Cards</a></li>
+                    <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/deals_page.html">Deals</a></li>
+                    <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/news_page.html">News</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Trading card game (TCG) - Explore and Collect!</h1>
+
+        <p>Welcome to our trading card page where you can find your rare and most desirable trading cards are located. Whether you are a collector or a gaming enthusiast, explore our handpicked display!</p>
+
+        <h2>Explore TCG Cards - Pokemon, Yu-Gi-Oh!, and More</h2>
+        <div class = "container">
+            <div class="content">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Image</th>
+                        <th>Description</th>
+                        <th>Original Price</th>
+                        <th>Discounted Price</th>
+                        <th>Action</th>
+                    </tr>
+
+                    <tr>
+                        <td>Fiendsmith Engraver (Yu-Gi-Oh!)</td>
+                        <td>
+                            <a href="https://www.tcgplayer.com/product/558188">
+                                <img src="images/fiendsmith.png" alt="TCG card called Fiendsmith Engraver">
+                            </a>
+                        </td>
+                        <td>
+                            Secret Rare Yu-Gi-Oh! Card. <br>
+                            Level: 6 | ATK/DEF: 1800 / 2400
+                        </td>
+                        <td>$107.83</td>
+                        <td>$83.04</td>
+                        <td><button onclick="add_to_cart('Fiendsmith Engraver', 83.04)">Add to Cart</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>The One Ring - Prerelease Cards (PRE)</td>
+                        <td>
+                            <a href="https://www.tcgplayer.com/product/501274/magic-prerelease-cards-the-one-ring?page=1&Language=English">
+                                <img src="images/one_ring.png" alt="TCG card called The One Ring - Prerelease Cards (PRE)">
+                            </a>
+                        </td>
+                        <td>
+                            The One Ring is a limited-edition Magic: The Gathering card with immense rarity. 
+                            As part of the Universes Beyond collaboration, this card is a tribute to the Lord of the Rings universe, 
+                            offering both power and prestige to its bearer.<br>
+                            Rarity:M |<br>
+                            Card Type:Legendary Artifact|<br>
+                            Casting Cost: 4|
+                            Artist:Veli Nyström
+                        </td>
+                        <td>$190.00</td>
+                        <td>Na</td>
+                        <td><button onclick="add_to_cart('The One Ring - Prerelease Cards (PRE)', 190)">Add to Cart</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Charizard PSA 10 (Pokemon)</td>
+                        <td>
+                            <a href="https://www.ebay.com/itm/356116920799">
+                                <img src="images/charizard.webp" alt="TCG card called Charizard PSA 10">
+                            </a>
+                        </td>
+                        <td>
+                            Iconic Charizard PSA 10 card from 2017. <br>
+                            Highly sought-after collector's item.
+                        </td>
+                        <td>$7,000.00</td>
+                        <td>$5,950.00</td>
+                        <td><button onclick="add_to_cart('Charizard PSA 10 2017', 5950)">Add to Cart</button></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="cart_update" class="cart_display">
+                <h3>Your Cart</h3>
+                <div id="cart_items">
+                    <p><strong>Your Cart Is Empty</strong></p>
+                </div>
+                <p><strong>Subtotal:</strong> $<span id="subtotal_display">0.00</span></p>
+                <p><strong>Tax (7%):</strong> $<span id="tax_display">0.00</span></p>
+                <p><strong>Total with Tax:</strong> $<span id="total_display">0.00</span></p>
+            </div>
+
         </div>
 
-        <nav id="nav_bar">
-            <ul>
-                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/index.html">Home</a></li>
-                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/tcg_page.html">Cards</a></li>
-                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/deals_page.html">Deals</a></li>
-                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/news_page.html">News</a></li>
-            </ul>
-        </nav>
-    </div>
-    <h1>Trading card game (TCG) - Explore and Collect!</h1>
-    <p>Welcome to our trading card page where you can find your rare and most desirable trading cards are located. Whether you are a collector or a gaming enthusiast, explore our handpicked display!</p>
+        
+        <div class="foot">
+            <nav>
+                <ul>
+                    <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/index.html">Home</a></li>
+                    <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/contact_us_form.html" id="form">Email Us</a></li>
+                    <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/news_page.html" class="new">News</a></li>
+                    <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/deals_page.html" class="deal">Deals</a></li>
+                    <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/tcg_page.html" class="card">Cards</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <h2>Explore TCG Cards - Pokemon, Yu-Gi-Oh!, and More</h2>
+        <script src = "js/simple_script.js"></script>
 
-    <div class="content">
-        <table>
-            <tr>
-                <th>Product</th>
-                <th>Image</th>
-                <th>Description</th>
-                <th>Original Price</th>
-                <th>Discounted Price</th>
-            </tr>
-
-            <tr>
-                <td>Fiendsmith Engraver (Yu-Gi-Oh!)</td>
-                <td>
-                    <a href="https://www.tcgplayer.com/product/558188">
-                        <img src="images/fiendsmith.png" alt="TCG card called Fiendsmith Engraver">
-                    </a>
-                </td>
-                <td>
-                    Secret Rare Yu-Gi-Oh! Card. <br>
-                    Level: 6 | ATK/DEF: 1800 / 2400
-                </td>
-                <td>$107.83</td>
-                <td>$83.04</td>
-            </tr>
-
-            <tr>
-                <td>The One Ring - Prerelease Cards (PRE)</td>
-                <td>
-                    <a href="https://www.tcgplayer.com/product/501274/magic-prerelease-cards-the-one-ring?page=1&Language=English">
-                        <img src="images/one_ring.png" alt="TCG card called The One Ring - Prerelease Cards (PRE)">
-                    </a>
-                </td>
-                <td>
-                    The One Ring is a limited-edition Magic: The Gathering card with immense rarity. 
-                    As part of the Universes Beyond collaboration, this card is a tribute to the Lord of the Rings universe, 
-                    offering both power and prestige to its bearer.<br>
-                    Rarity:M |<br>
-                    Card Type:Legendary Artifact|<br>
-                    Casting Cost: 4|
-                    Artist:Veli Nyström
-                </td>
-                <td>$190.00</td>
-                <td>Na</td>
-            </tr>
-
-            <tr>
-                <td>Charizard PSA 10 (Pokemon)</td>
-                <td>
-                    <a href="https://www.ebay.com/itm/356116920799">
-                        <img src="images/charizard.webp" alt="TCG card called Charizard PSA 10">
-                    </a>
-                </td>
-                <td>
-                    Iconic Charizard PSA 10 card from 2017. <br>
-                    Highly sought-after collector's item.
-                </td>
-                <td>$7,000.00</td>
-                <td>$5,950.00</td>
-            </tr>
-        </table>
-    </div>
-    
-    <div class="foot">
-        <nav>
-            <ul>
-                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/index.html">Home</a></li>
-                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/contact_us_form.html" id="form">Email Us</a></li>
-                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/news_page.html" class="new">News</a></li>
-                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/deals_page.html" class="deal">Deals</a></li>
-                <li><a href="https://jimmyzhang.rhody.dev/csc271_projects/product_site/tcg_page.html" class="card">Cards</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    
-</body>
+    </body>
 
 </html>
