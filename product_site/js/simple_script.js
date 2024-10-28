@@ -29,14 +29,18 @@ function add_to_cart(name, price) {
 }
 
 
-//a funtion called update_cart_display will update the visual contents of the cart
-//
+// a funtion called update_cart_display will update the visual contents of the cart
+// 
 function update_cart_display() {
     //a variable that stores cart_display, subtotal, tax, and total
-    const cart_display = document.getElementById("cart_items"); // Display items in cart
-    const subtotal_display = document.getElementById("subtotal_display"); // Display subtotal
-    const tax_display = document.getElementById("tax_display"); // Display tax
-    const total_display = document.getElementById("total_display"); // Display total with tax
+    // display items in cart
+    const cart_display = document.getElementById("cart_items");
+    // display subtotal
+    const subtotal_display = document.getElementById("subtotal_display");
+    // display tax
+    const tax_display = document.getElementById("tax_display");
+    // display total with tax
+    const total_display = document.getElementById("total_display");
 
     // check if chart is empty
     if (cart.length === 0) {
@@ -50,7 +54,7 @@ function update_cart_display() {
     // create 2 variables called cart_HTML and subtotal
     let cart_HTML = "<table><tr><th>Product</th><th>Quantity</th><th>Price</th><th>Total</th></tr>";
     let subtotal = 0;
-    // we will the foreach method since it is short and non complex operation
+    // we will use the foreach method since it is short and non complex operation and since we are also dealing an array
     // loop through each item in the cart and append a new row to cart_HTML for each item's name and price
     // lastly it will add all the price together together to get the sum total.
     cart.forEach(item => {
@@ -76,22 +80,33 @@ function update_cart_display() {
     // updated HTML to display the cart
     cart_display.innerHTML = cart_HTML;
 }
-
+// use hamburger_icon for getElementById ID
 const hamburger_icon = document.getElementById("hamburger_icon");
-const menuListItems = document.querySelectorAll("#nav_bar li"); // Using querySelectorAll for menu items
+// using querySelectorAll for menu items
+const menu_list_items = document.querySelectorAll("#nav_bar li"); 
 
 // toggle the navigation menu on click
+// to do that we use an addEventListener
+// an addEventListener method is a function that allows one to attach a handler to an element on a webpage
+// the syntax for it element.addEventListener(eventType, function);
+// element-> DOM element, eventType -> a string that specifies the type of event you want to listen for
+// function -> the code you one wants to run when the event happens
+// use an addEventListener with a parameter of click(eventType) and a function that toggles an 
+// active class on the navigation menu (nav_menu)-> control visibility of the nav_menu
 hamburger_icon.addEventListener("click", () => {
     const nav_menu = document.getElementById("nav_bar");
     nav_menu.classList.toggle("active");
 });
 
 // add hover effect to each li element in the menu
-menuListItems.forEach((item) => {
+// using a forEach method to iterate through each items in menu List 
+// the use of forEach simple non complex code and array or rather a nodelist
+menu_list_items.forEach((item) => {
+    // add an addEventListener Method to hover over (mouseover) change background 
     item.addEventListener("mouseover", () => {
         item.style.backgroundColor = "#555";
     });
-    //reset background color
+    // // add an addEventListener Method when mouse is leaves out of the items boundary (mouseout) reset background color
     item.addEventListener("mouseout", () => {
         item.style.backgroundColor = "";
     });
