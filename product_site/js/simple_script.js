@@ -1,21 +1,21 @@
-// a variable called logo_container that calls the first class Name with the class logo_container that is const
-const logo_container = document.getElementsByClassName("logo_container")[0];
+// a variable called logo_container that calls the first class Name with the class logo_container that is var
+var logo_container = document.getElementsByClassName("logo_container")[0];
 // change background color style to black
 logo_container.style.backgroundColor = "#000";
-// a const variable called header_adjustment will get the first h1 tag 
-const header_adjustment = document.getElementsByTagName("h1")[0];
+// a var variable called header_adjustment will get the first h1 tag 
+var header_adjustment = document.getElementsByTagName("h1")[0];
 // change font style to 50px
 header_adjustment.style.fontSize = "50px";
 
-// create an array call cart when it will be const
-const cart = [];
+// create an array call cart when it will be var
+var cart = [];
 
 // a function where it will take a name and price as its parameter
 // object will be created to represent the
 // item and price for a product. item will be pushed into the cart array
 // after cart display will be updated
 function add_to_cart(name, price) {
-    const existingItem = cart.find(item => item.name === name);
+    var existingItem = cart.find(item => item.name === name);
     if (existingItem) {
         // Increase quantity if item already exists
         existingItem.quantity += 1;
@@ -34,13 +34,13 @@ function add_to_cart(name, price) {
 function update_cart_display() {
     //a variable that stores cart_display, subtotal, tax, and total
     // display items in cart
-    const cart_display = document.getElementById("cart_items");
+    var cart_display = document.getElementById("cart_items");
     // display subtotal
-    const subtotal_display = document.getElementById("subtotal_display");
+    var subtotal_display = document.getElementById("subtotal_display");
     // display tax
-    const tax_display = document.getElementById("tax_display");
+    var tax_display = document.getElementById("tax_display");
     // display total with tax
-    const total_display = document.getElementById("total_display");
+    var total_display = document.getElementById("total_display");
 
     // check if chart is empty
     if (cart.length === 0) {
@@ -59,7 +59,7 @@ function update_cart_display() {
     // lastly it will add all the price together together to get the sum total.
     cart.forEach(item => {
         // quanitity
-        const item_total = item.price * item.quantity;
+        var item_total = item.price * item.quantity;
         cart_HTML += `<tr><td>${item.name}</td><td>${item.quantity}</td><td>$${item.price.toFixed(2)}</td><td>$${item_total.toFixed(2)}</td></tr>`;
         subtotal += item_total;
     });
@@ -68,8 +68,8 @@ function update_cart_display() {
     cart_display.innerHTML = cart_HTML;
 
     // calculate the tax and final total
-    const tax = subtotal * 0.07;
-    const final_total = subtotal + tax;
+    var tax = subtotal * 0.07;
+    var final_total = subtotal + tax;
 
     // display subtotal, tax, and final total in the table
     // use textContent to update the values dynamically
@@ -80,10 +80,11 @@ function update_cart_display() {
     // updated HTML to display the cart
     cart_display.innerHTML = cart_HTML;
 }
+/*
 // use hamburger_icon for getElementById ID
-const hamburger_icon = document.getElementById("hamburger_icon");
+var hamburger_icon = document.getElementById("hamburger_icon");
 // using querySelectorAll for menu items
-const menu_list_items = document.querySelectorAll("#nav_bar li"); 
+var menu_list_items = document.querySelectorAll("#nav_bar li"); 
 
 // toggle the navigation menu on click
 // to do that we use an addEventListener
@@ -94,7 +95,7 @@ const menu_list_items = document.querySelectorAll("#nav_bar li");
 // use an addEventListener with a parameter of click(eventType) and a function that toggles an 
 // active class on the navigation menu (nav_menu)-> control visibility of the nav_menu
 hamburger_icon.addEventListener("click", () => {
-    const nav_menu = document.getElementById("nav_bar");
+    var nav_menu = document.getElementById("nav_bar");
     nav_menu.classList.toggle("active");
 });
 
@@ -111,5 +112,6 @@ menu_list_items.forEach((item) => {
         item.style.backgroundColor = "";
     });
 });
+*/
 
 

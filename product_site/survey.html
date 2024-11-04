@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Satisfaction Survey</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="survey">
+
+        <h2>User Satisfaction Survey</h2>
+        <p>We would love to hear your feedback to improve our products and services.</p>
+
+        <form id="survey_form">
+            <label for="user_type">1. Are you a customer or visitor:</label>
+            <select id="user_type" name="user_type" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="customer">Customer</option>
+                <option value="visitor">Visitor</option>
+            </select>
+
+            <label for="category">2. Product Category:</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="TCG Cards">TCG Cards</option>
+                <option value="Computer Components">Computer Components</option>
+            </select>
+
+            <label id="satisfaction_label" for="satisfaction">3. How satisfied are you with our products?</label>
+            <select id="satisfaction" name="satisfaction" required>
+                <option value="" disabled selected>Select satisfaction level</option>
+                <option value="Very Satisfied">Very Satisfied</option>
+                <option value="Satisfied">Satisfied</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Dissatisfied">Dissatisfied</option>
+                <option value="Very Dissatisfied">Very Dissatisfied</option>
+            </select>
+
+            <button type="button" onclick="submit_survey()">Submit Survey</button>
+        </form>
+
+        <script src="js/survey.js"></script>
+
+    </body>
+</html>

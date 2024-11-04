@@ -218,6 +218,36 @@ iframe {
     height: auto;
 }
 
+.survey {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.survey form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.survey label {
+    font-weight: bold;
+}
+
+.survey button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.survey button:hover {
+    background-color: #45a049;
+}
+
 /* Media Query */
 @media screen and (max-width: 600px) {
     .logo_container {
