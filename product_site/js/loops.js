@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //a variable keep track of the current index  of an array
     var current_step_index = 0;
     // 3 variavle that represent element in the index.html webpage
-    const steps_container = document.querySelector("giveaway_steps_display");
+    const steps_container = document.querySelector("#giveaway_steps_display");
     const next_step_button = document.querySelector("#next_step_btn");
     const show_all_steps_button = document.querySelector("#show_all_steps_btn");
     //console.log(show_all_steps_button);
