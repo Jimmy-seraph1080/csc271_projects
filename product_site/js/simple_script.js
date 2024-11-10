@@ -7,6 +7,19 @@ var header_adjustment = document.getElementsByTagName("h1")[0];
 // change font style to 50px
 header_adjustment.style.fontSize = "50px";
 
+// a function that calculates the total number of items in the cart
+function get_total_items() {
+    // create a variable call total_items
+    let total_items = 0;
+    // we will use the foreach method since it is short and non complex operation and since we are also dealing an array
+    // loop through each item in the cart to sum up the quantities
+    cart.forEach(item => {
+        total_items += item.quantity;
+    });
+    // Return the total count of items in the cart
+    return total_items;
+}
+
 // create an array call cart when it will be var
 var cart = [];
 
@@ -15,15 +28,17 @@ var cart = [];
 // item and price for a product. item will be pushed into the cart array
 // after cart display will be updated
 function add_to_cart(name, price) {
+    //using the find method to find the first element with that name
     var existingItem = cart.find(item => item.name === name);
+    // if true
     if (existingItem) {
-        // Increase quantity if item already exists
+        // Increase quantity
         existingItem.quantity += 1;
     }
     else {
+        // push object
         cart.push({ name: name, price: price, quantity: 1 });
     }
-    // push object
     // update the cart display
     update_cart_display();
 }
@@ -40,7 +55,7 @@ function update_cart_display() {
     // display tax
     var tax_display = document.getElementById("tax_display");
     // display total with tax
-    var total_display = document.getElementById("total_display");
+    var total_items_display = document.getElementById("total_items_display");
 
     // check if chart is empty
     if (cart.length === 0) {
@@ -76,42 +91,14 @@ function update_cart_display() {
     subtotal_display.textContent = subtotal.toFixed(2);
     tax_display.textContent = tax.toFixed(2);
     total_display.textContent = final_total.toFixed(2);
+    total_items_display.textContent = get_total_items();
 
     // updated HTML to display the cart
     cart_display.innerHTML = cart_HTML;
 }
-/*
-// use hamburger_icon for getElementById ID
-var hamburger_icon = document.getElementById("hamburger_icon");
-// using querySelectorAll for menu items
-var menu_list_items = document.querySelectorAll("#nav_bar li"); 
 
-// toggle the navigation menu on click
-// to do that we use an addEventListener
-// an addEventListener method is a function that allows one to attach a handler to an element on a webpage
-// the syntax for it element.addEventListener(eventType, function);
-// element-> DOM element, eventType -> a string that specifies the type of event you want to listen for
-// function -> the code you one wants to run when the event happens
-// use an addEventListener with a parameter of click(eventType) and a function that toggles an 
-// active class on the navigation menu (nav_menu)-> control visibility of the nav_menu
-hamburger_icon.addEventListener("click", () => {
-    var nav_menu = document.getElementById("nav_bar");
-    nav_menu.classList.toggle("active");
-});
-
-// add hover effect to each li element in the menu
-// using a forEach method to iterate through each items in menu List 
-// the use of forEach simple non complex code and array or rather a nodelist
-menu_list_items.forEach((item) => {
-    // add an addEventListener Method to hover over (mouseover) change background 
-    item.addEventListener("mouseover", () => {
-        item.style.backgroundColor = "#555";
-    });
-    // // add an addEventListener Method when mouse is leaves out of the items boundary (mouseout) reset background color
-    item.addEventListener("mouseout", () => {
-        item.style.backgroundColor = "";
-    });
-});
-*/
-
+// call the function and store the result in a variable for logging
+var total_item_count = get_total_items();
+// output the count
+console.log("Total number of items in the cart:", total_item_count);
 

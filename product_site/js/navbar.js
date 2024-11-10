@@ -26,7 +26,7 @@ for (let i = 0; i < menu_list_items.length; i++){
     item.addEventListener("mouseover", () => {
         item.style.backgroundColor = "#555";
     });
-    // // add an addEventListener Method when mouse is leaves out of the items boundary (mouseout) reset background color
+    // add an addEventListener Method when mouse is leaves out of the items boundary (mouseout) reset background color
     item.addEventListener("mouseout", () => {
         item.style.backgroundColor = "";
     });
