@@ -7,7 +7,7 @@ var header_adjustment = document.getElementsByTagName("h1")[0];
 // change font style to 50px
 header_adjustment.style.fontSize = "50px";
 
-// a function that calculates the total number of items in the cart
+// a function with no parameter that calculates and returns the total number of items in the cart
 function get_total_items() {
     // create a variable call total_items
     let total_items = 0;
@@ -44,7 +44,7 @@ function add_to_cart(name, price) {
 }
 
 
-// a funtion called update_cart_display will update the visual contents of the cart
+// a funtion with no parameter called update_cart_display will update the visual contents of the cart
 // 
 function update_cart_display() {
     //a variable that stores cart_display, subtotal, tax, and total

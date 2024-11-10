@@ -1,11 +1,11 @@
-//function to update the satisfaction question based on survey responses
+//function with no parameter to update the satisfaction question based on survey responses
 function update_question() {
     // create 3 variable that would store the value of user_type, category, and satisfaction_label
     var user_type = document.getElementById("user_type").value;
     var category = document.getElementById("category").value;
     var satisfaction_label = document.getElementById("satisfaction_label");
 
-    //evaluate three conditions resulting in Booleans
+    // evaluate three conditions resulting in Booleans
     var is_customer = user_type === "customer";
     var is_TCG = category === "TCG Cards";
     var is_components = category === "Computer Components";
@@ -29,10 +29,10 @@ function update_question() {
     }
 }
 
-//using addEventListener s to update question based user selection in the survey page
+// using addEventListener s to update question based user selection in the survey page by calling the update_question function 
 document.getElementById("user_type").addEventListener("change", update_question);
 document.getElementById("category").addEventListener("change", update_question);
-//a function where after the user submit a survey an alert will pop up and notify the user on their completion of the survey
+// a function with no parameter where after the user submit a survey an alert will pop up and notify the user on their completion of the survey
 // after the alert it will reset the form and call the update_question function to ensure that question are set to default until the user input an answer
 function submit_survey() {
     //once user submit display thank you message as a pop up
