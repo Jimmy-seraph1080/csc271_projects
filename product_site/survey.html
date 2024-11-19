@@ -12,6 +12,10 @@
         <p>We would love to hear your feedback to improve our products and services.</p>
 
         <form id="survey_form">
+            <label for="age">4. Your Age:</label>
+            <input type="text" id="age" name="age" placeholder="Enter your age" required>
+            <p id="age_feedback" class="feedback"></p>
+            
             <label for="user_type">1. Are you a customer or visitor:</label>
             <select id="user_type" name="user_type" required>
                 <option value="" disabled selected>Select an option</option>
@@ -35,8 +39,12 @@
                 <option value="Dissatisfied">Dissatisfied</option>
                 <option value="Very Dissatisfied">Very Dissatisfied</option>
             </select>
+            
+            <label for="Message"> Message: </label>
+            <br>
+            <textarea id="Message" name="Message" rows="5" cols="33" required></textarea>
 
-            <button type="button" onclick="submit_survey()">Submit Survey</button>
+            <button type="submit" id ="submit_survey_btn">Submit Survey</button>
         </form>
 
         <script src="js/survey.js"></script>

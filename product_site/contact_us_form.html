@@ -7,31 +7,36 @@
         <link rel = "stylesheet" href = "css/style.css">
     </head>
     <body>
+        
         <h1>Contact Form Submission</h1>
-        <form action="index.html">
-            <label for="Email"> Email</label>
-            <input type="text" id="Email" name="Email" required>
-            <br><br>
+        <div class="column"></div>
+        <form id="contactForm" action="index.html" method="POST">
+                <label for="Email"> Email</label>
+                <input type="text" id="Email" name="Email" required>
+                <br><br>
 
-            <label for="Subject">Subject</label>
-            <br>
-            <textarea id="Subject" name="Subject" rows="5" cols="33" required></textarea>
-            <br><br>
+                <label for="Subject">Subject</label>
+                <br>
+                <textarea id="Subject" name="Subject" rows="5" cols="33" required></textarea>
+                <br><br>
 
-            <label for="Message"> Message: </label>
-            <br>
-            <textarea id="Message" name="Message" rows="5" cols="33" required></textarea>
-            <br><br>
+                <label for="Message"> Message: </label>
+                <br>
+                <textarea id="Message" name="Message" rows="5" cols="33" required></textarea>
+                <br><br>
 
-            <label>Product: </label>
-            <br>
-            <input type="radio" id="TCG" name="Product" value="TCG">
-            <label for="TCG">TCG</label>
-            <br>
-            <input type="radio" id="ComputerComponent" name="Product" value="Computer Component">
-            <label for="ComputerComponent"> Computer Component</label>
-            <br><br>
-            <button type="submit">Submit</button>
-        </form>
+                <label>Product: </label>
+                <br>
+                <input type="radio" id="TCG" name="Product" value="TCG">
+                <label for="TCG">TCG</label>
+                <br>
+                <input type="radio" id="ComputerComponent" name="Product" value="Computer Component">
+                <label for="ComputerComponent"> Computer Component</label>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="feedback"></div>
+        </div>
     </body>
+    <script src = "js/form.js"></script>
 </html>

@@ -42,3 +42,10 @@ function submit_survey() {
     // call the function to update the content of the survey base base on
     update_question();
 }
+
+document.getElementById('submit_survey_btn').addEventListener('click', submit_survey);
+
+var form = document.getElementById('form');
+
+form.addEventListener('focus', (event))
+
