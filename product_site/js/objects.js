@@ -24,10 +24,15 @@ function computer_part(name, image, description, original_price, discounted_pric
     };
     // Method to generate number of star based on the rating value
     this.get_stars = function () {
+<<<<<<< HEAD
         // Filled stars
         const filled_stars = "★".repeat(this.rating);
         // Empty stars
         const empty_stars = "☆".repeat(5 - (this.rating));
+=======
+        const filled_stars = "★".repeat(this.rating); // Filled stars
+        const empty_stars = "☆".repeat(this.rating); // Empty stars
+>>>>>>> d93183894f149ab3abe0b853c48878b2f63233a2
         return filled_stars + empty_stars;
     };
 }
