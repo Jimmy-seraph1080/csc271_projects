@@ -248,6 +248,73 @@ iframe {
     background-color: #45a049;
 }
 
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Form Labels */
+form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Form Inputs */
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    border-color: #30d5eb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(48, 213, 235, 0.5);
+}
+
+/* Radio Buttons */
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form button[type="submit"]:active {
+    background-color: #3e8e41;
+}
+
 /* Media Query */
 @media screen and (max-width: 600px) {
     .logo_container {
