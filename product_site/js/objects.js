@@ -58,7 +58,7 @@ var computer_part_2 = new computer_part(
 // purpose is to populate the table
 document.addEventListener("DOMContentLoaded", () => {
     // select an element
-    var table_body = document.querySelector("table tbody");
+    var table_body = document.querySelector("table");
     // display the content for the first instance 
     table_body.innerHTML += computer_part_1.display();
     // display the content for the second instance
