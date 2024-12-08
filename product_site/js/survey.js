@@ -47,5 +47,5 @@ document.getElementById('submit_survey_btn').addEventListener('click', submit_su
 
 var form = document.getElementById('form');
 
-form.addEventListener('focus', (event))
+form.addEventListener('focus', (event));
 
